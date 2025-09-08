@@ -1,0 +1,85 @@
+[
+  {
+    "ContainingType": "TodoApplication.Controllers.TodosController",
+    "Method": "AddTodo",
+    "RelativePath": "api/Todos/AddTodo",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "todo",
+        "Type": "TodoApplication.DTO.todoDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TodoApplication.Controllers.TodosController",
+    "Method": "GetAllTodos",
+    "RelativePath": "api/Todos/AllTodos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[TodoApplication.Models.Todo, TodoApplication, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TodoApplication.Controllers.TodosController",
+    "Method": "GetTodoById",
+    "RelativePath": "api/Todos/GetTodoByID/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "TodoApplication.Models.Todo",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TodoApplication.Controllers.TodosController",
+    "Method": "UpdateTodoByID",
+    "RelativePath": "api/Todos/UpdateTodoByID/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "todo",
+        "Type": "TodoApplication.Models.Todo",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
